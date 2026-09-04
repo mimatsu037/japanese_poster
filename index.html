@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本風ポスター販売スタートガイド - みな</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#ff8a75',
+        secondary: '#5cbe96',
+        accent: '#ffb347',
+        bgLight: '#fffcf7',
+      }
+    }
+  }
+}
+</script>
+<style>
+body {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  background-color: #fcf9f2;
+  color: #333333;
+}
+.highlight-marker {
+  background: linear-gradient(transparent 60%, #ffcda5 0%);
+  padding-bottom: 2px;
+}
+.step-number {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animate-bounce-slow { animation: bounce-slow 2.5s infinite; }
+.animate-float { animation: float 4s ease-in-out infinite; }
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+.copy-toast {
+  animation: toast-in 0.3s ease-out;
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-bgLight">
+
+<!-- Copy Toast -->
+<div id="copyToast" class="copy-toast fixed bottom-6 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-5 py-3 rounded-full shadow-xl z-50 items-center" style="display:none;">
+  ✅ コピーしました！
+</div>
+
+<div class="max-w-2xl mx-auto">
+
+<!-- ヘッダー -->
+<header class="pt-8 pb-10 px-6 text-center">
+  <span class="inline-block bg-primary/10 text-primary font-bold text-xs sm:text-sm px-4 py-2 rounded-full mb-5 border border-primary/20">
+    🌸 スキマ時間ではじめる新習慣
+  </span>
+
+  <p class="text-sm text-gray-500 mb-2">寝かしつけ後の30分だけでOK</p>
+  <h1 class="text-2xl sm:text-4xl font-extrabold leading-snug mb-3">
+    <span class="block">チャッピーで作る</span>
+    <span class="block"><span class="text-primary highlight-marker">日本風ポスター販売</span></span>
+    <span class="block">スタートガイド</span>
+  </h1>
+  <p class="text-gray-600 text-sm sm:text-base mb-6 leading-relaxed">
+    <span class="block">デザイン経験ゼロ・英語力ゼロでもOK。</span>
+    <span class="block">在庫を持たずにできる新しい収入のカタチ🎨</span>
+  </p>
+
+  <div class="inline-block bg-white shadow-sm border border-gray-100 rounded-full px-6 py-3 mb-8">
+    <p class="text-sm font-bold text-gray-700">💡 AIにお任せで「作る→売る」が完結</p>
+  </div>
+
+  <!-- プロフィールカード（固定） -->
+  <div class="bg-white rounded-2xl shadow-md p-4 flex items-center max-w-sm mx-auto">
+    <img src="assets/profile.png" alt="みな" class="w-14 h-14 rounded-full object-cover mr-4 shrink-0">
+    <div class="text-left">
+      <p class="font-bold text-gray-800 text-sm">みな</p>
+      <p class="text-xs text-gray-500 mb-1">AI×SNSで在宅収入を叶える主婦</p>
+      <a href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer" class="text-xs text-primary font-medium">@mina_ai_fukugyo ▶</a>
+    </div>
+  </div>
+</header>
+
+<!-- お悩みセクション -->
+<section class="bg-blue-50/50 rounded-t-[3rem] py-14 px-6">
+  <h2 class="text-xl sm:text-2xl font-bold text-center mb-8">
+    こんなお悩みありませんか？😰
+  </h2>
+
+  <div class="space-y-4 mb-8">
+    <div class="bg-white rounded-2xl shadow-sm p-5 border border-gray-100">
+      <p class="text-sm sm:text-base leading-relaxed">⏰ <strong class="text-primary">スキマ時間しかなくて</strong>、<span class="block sm:inline">まとまった作業時間が取れない…</span></p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5 border border-gray-100">
+      <p class="text-sm sm:text-base leading-relaxed">🎨 <strong class="text-primary">デザインも英語も自信がない</strong>から、<span class="block sm:inline">海外向けなんて自分には無理そう…</span></p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5 border border-gray-100">
+      <p class="text-sm sm:text-base leading-relaxed">📦 せっかく始めても<strong class="text-primary">在庫や発送の手間</strong>が<span class="block sm:inline">ネックになりそう…</span></p>
+    </div>
+  </div>
+
+  <p class="text-center text-gray-600 text-sm sm:text-base leading-relaxed mb-8 max-w-md mx-auto">
+    <span class="block">私も最初は同じことを思っていました🥺</span>
+    <span class="block">でも、実際にやってみたら</span>
+    <span class="block">「思っていたよりずっとシンプル」だったんです。</span>
+  </p>
+
+  <div class="bg-white border-2 border-primary/30 rounded-2xl p-6 text-center max-w-md mx-auto shadow-sm">
+    <p class="font-bold text-gray-800 text-base sm:text-lg mb-1 leading-relaxed">
+      <span class="block">そのお悩み</span>
+      <span class="block">『日本風ポスター販売』</span>
+      <span class="block">で解決できます！</span>
+    </p>
+    <p class="text-sm text-gray-600">
+      <span class="block">✨ 在庫ゼロ・スキマ時間・</span>
+      <span class="block">チャッピー任せでOK</span>
+    </p>
+  </div>
+</section>
+
+<!-- ブロックB：自由構成 -->
+<section class="py-14 px-6 bg-bgLight">
+  <div class="text-center mb-10">
+    <span class="inline-block bg-secondary/10 text-secondary font-bold text-xs px-4 py-2 rounded-full mb-4">
+      📈 実は今、こんな人が増えています
+    </span>
+    <p class="text-sm sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto">
+      <span class="block">「日本の景色」をモチーフにしたポスターは、海外の方から見るととても魅力的な題材。</span>
+      <span class="block">レビューが30件以上ついているショップも珍しくなく、<span class="font-bold text-gray-800">京都の街並みや桜、電車のある風景</span>は特に人気のモチーフです🌸</span>
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 mb-12">
+    <div class="bg-white rounded-2xl shadow-sm p-5 flex items-start border border-gray-100">
+      <span class="text-2xl mr-3 shrink-0">🖼️</span>
+      <div>
+        <p class="font-bold text-sm mb-1">データ販売だから在庫ゼロ</p>
+        <p class="text-xs text-gray-500"><span class="block">仕入れも発送も不要。</span><span class="block">ダウンロード販売だから完全在宅で完結します。</span></p>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5 flex items-start border border-gray-100">
+      <span class="text-2xl mr-3 shrink-0">🇯🇵</span>
+      <div>
+        <p class="font-bold text-sm mb-1">日本人だからこそ作りやすい</p>
+        <p class="text-xs text-gray-500">不自然な日本語や街並みの違和感に気づけるのは、日本に住む私たちの強みです。</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-sm p-5 flex items-start border border-gray-100">
+      <span class="text-2xl mr-3 shrink-0">🔁</span>
+      <div>
+        <p class="font-bold text-sm mb-1">1回の出品がずっと働いてくれる</p>
+        <p class="text-xs text-gray-500">一度掲載すれば、寝かしつけている間もお仕事が進んでいる状態に。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP解説 -->
+  <h3 class="text-xl sm:text-2xl font-bold text-center mb-6">
+    やり方は<span class="text-primary">全6ステップ</span>🔆
+  </h3>
+
+  <!-- 全体フロー図解 -->
+  <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-10">
+    <div class="flex items-center justify-center gap-1.5 sm:gap-3">
+      <div class="flex flex-col items-center w-16 sm:w-20">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center text-xl sm:text-2xl mb-1.5">💭</div>
+        <p class="text-[10px] sm:text-xs font-bold text-gray-600 text-center leading-tight">テーマ<br>決め</p>
+      </div>
+      <span class="text-gray-300 text-lg sm:text-xl">→</span>
+      <div class="flex flex-col items-center w-16 sm:w-20">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center text-xl sm:text-2xl mb-1.5">🖼️</div>
+        <p class="text-[10px] sm:text-xs font-bold text-gray-600 text-center leading-tight">画像<br>生成</p>
+      </div>
+      <span class="text-gray-300 text-lg sm:text-xl">→</span>
+      <div class="flex flex-col items-center w-16 sm:w-20">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center text-xl sm:text-2xl mb-1.5">✍️</div>
+        <p class="text-[10px] sm:text-xs font-bold text-gray-600 text-center leading-tight">タイトル<br>作成</p>
+      </div>
+      <span class="text-gray-300 text-lg sm:text-xl">→</span>
+      <div class="flex flex-col items-center w-16 sm:w-20">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-secondary/10 flex items-center justify-center text-xl sm:text-2xl mb-1.5">🎉</div>
+        <p class="text-[10px] sm:text-xs font-bold text-gray-600 text-center leading-tight">出品<br>完了</p>
+      </div>
+    </div>
+    <p class="text-center text-[11px] sm:text-xs text-gray-400 mt-4">全部チャッピーにお任せでOK🤍</p>
+  </div>
+
+  <div class="space-y-10">
+
+    <!-- STEP1 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">01</span>
+        <p class="font-bold text-base sm:text-lg">チャッピーにアイデア出しをお願いする</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">
+        <span class="block">海外の方が「日本っぽい！」と感じるモチーフの例はこんな感じ🌸</span>
+      </p>
+      <ul class="bg-white rounded-xl p-4 border border-gray-100 space-y-2 mb-4">
+        <li class="flex items-start text-sm text-gray-700"><span class="text-primary mr-2 shrink-0">・</span>京都の街並み × 桜</li>
+        <li class="flex items-start text-sm text-gray-700"><span class="text-primary mr-2 shrink-0">・</span>電車 × 富士山</li>
+        <li class="flex items-start text-sm text-gray-700"><span class="text-primary mr-2 shrink-0">・</span>日本庭園 × 紅葉</li>
+      </ul>
+      <p class="text-sm text-gray-600 leading-relaxed mb-4">
+        <span class="block">こういったテーマを、チャッピーに12案まとめて考えてもらいます。</span>
+      </p>
+      <div class="bg-gray-900 text-gray-100 rounded-2xl p-5 relative">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs text-gray-400 font-bold">【コピペ用プロンプト】</p>
+          <button onclick="copyPrompt('prompt1')" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold pl-2.5 pr-3 py-1.5 rounded-lg transition flex items-center gap-1 shrink-0">📋 コピー</button>
+        </div>
+        <div id="prompt1" class="text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-mono max-h-48 overflow-y-auto pr-2">これから海外のお客様向けにデジタルポスターを販売しようと思っています。
+「日本」を感じさせるポスターのデザイン案を12個、一緒に考えてください。
+
+見た人が「これは日本だ」「行ってみたい」「部屋に飾りたい」と直感的に感じられるようなアイデアがほしいです。
+
+# アイデアを考えるときの条件
+・パッと見て日本らしさが伝わるモチーフを選ぶこと
+・海外の人にも理解しやすいモチーフにすること
+・部屋のインテリアとして違和感なく飾れるデザインにすること
+・12案の間で構図や雰囲気がなるべく重複しないこと
+・都市／自然／季節／乗り物／食文化／伝統文化といったジャンルをまんべんなく散りばめること
+・候補地は京都・東京だけに偏らせず、日本各地から選ぶこと
+・画像生成AIで再現しやすい、イメージしやすい内容にすること
+・存在しない日本語表記や看板が写り込みにくい構図を意識すること
+
+# 各案でまとめてほしい情報
+1. テーマの名前（例：桜舞う京都と赤い電車）
+2. 中心となる場所・モチーフ（例：古都の街並み、桜、赤い電車）
+3. 構図のイメージ（例：手前に桜を配置し、中央を電車が横切り、奥に山並みが見える構図）
+4. 雰囲気・テイストの提案（例：昭和レトロ調、ヴィンテージトラベルポスター、和モダン、水彩タッチなど）
+5. 配色の提案（例：淡いピンク、生成り色、朱色、くすみグリーン）
+
+# バリエーションについて
+かわいらしい雰囲気・レトロな雰囲気・ミニマルな雰囲気・和モダン・幻想的・旅行ポスター風など、テイストに幅を持たせて提案してください。
+
+# 最後にお願いしたいこと
+出した12案のうち、海外向けデジタルポスターとして特に相性が良さそうな3案をピックアップし、その理由も簡潔に教えてください。
+
+なお、「レトロ感をもっと強めて」「女性ウケしそうな雰囲気にして」「京都だけで12案考えて」のように、あとから追加で条件を伝えて調整してもらうこともできます。</div>
+        <p class="text-[10px] text-gray-500 text-center mt-2">▼ スクロールで全文表示できます</p>
+      </div>
+    </div>
+
+    <!-- STEP2 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">02</span>
+        <p class="font-bold text-base sm:text-lg">ポスター画像を作ってもらう</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed mb-4">
+        <span class="block">決まったテーマを使って、実際にポスター画像を生成してもらいます。</span>
+        <span class="block">世界観や構図の条件を伝えるほど、仕上がりの質が上がります🖼️</span>
+      </p>
+      <div class="bg-gray-900 text-gray-100 rounded-2xl p-5 relative">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs text-gray-400 font-bold">【コピペ用プロンプト】</p>
+          <button onclick="copyPrompt('prompt2')" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold pl-2.5 pr-3 py-1.5 rounded-lg transition flex items-center gap-1 shrink-0">📋 コピー</button>
+        </div>
+        <div id="prompt2" class="text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-mono max-h-48 overflow-y-auto pr-2"># やってほしいこと
+さきほど考えてもらった日本風ポスター案の中から、次の3案を使って、海外の20〜30代女性が「部屋に飾りたい」と思うようなポスター画像を作成してください。
+
+# 今回使う3案
+【ここに1案目を貼る】
+【ここに2案目を貼る】
+【ここに3案目を貼る】
+
+各案について、さきほど出してもらった場所・モチーフ・構図・テイスト・配色の情報をなるべく反映してください。
+
+# 想定している購入者
+・日本文化や日本旅行に興味がある海外の20〜30代女性
+・温かみのあるおしゃれなインテリアを好む人
+・寝室やリビング、仕事部屋に飾れるアートを探している人
+
+# 全体のトーン
+・日本の風景を描いた、レトロで上品な旅行ポスター風の仕上がり
+・淡いピンクや朱色、生成り色、パステルブルーを基調にすること
+・紙のような質感を少し加え、温かみを出すこと
+・海外のインテリアにもなじむ、洗練された配色にすること
+・3枚並べたときに統一感が出るようにすること
+・3枚とも画風・色味・質感は揃えつつ、構図はそれぞれ変えること
+・実在の写真の再現ではなく、オリジナルの構図で描くこと
+・写実的になりすぎず、アートとして飾りやすい表現にすること
+
+# デザインで意識してほしいポイント
+・主役のモチーフがひと目でわかること
+・情報を詰め込みすぎず、余白を活かした構図にすること
+・遠くから見ても印象に残ること
+・海外の人が見て「日本らしい」と感じられること
+・日本人が見ても文化的・地理的な違和感がないこと
+
+# 日本らしさを描くうえでの注意点
+・建物、電車、鳥居、提灯、着物などは日本文化として自然な形にすること
+・中国風・韓国風の建築や衣装、装飾と混同しないこと
+・地理的にありえない風景の組み合わせは避けること
+・鳥居や畳、日本家屋の形・配置に違和感がないようにすること
+・人物を描く場合は小さな後ろ姿や遠景程度に留めること
+・季節を表す場合は、植物・服装・空の色も季節に合わせること
+
+# 避けてほしいこと
+・ポスター内に日本語、英語、数字、ロゴ、サイン、透かしを入れないこと
+・意味を持たない日本語風の文字や模様を入れないこと
+・実在のブランドロゴを使わないこと
+・既存のキャラクターや作品、特定作家の画風を模倣しないこと
+・顔や手が大きく写る人物を配置しないこと
+・写真と見紛うようなリアルすぎる表現にしないこと
+・3枚が似たような構図にならないようにすること
+
+# 出力の形式
+・3枚を横並び、または均等に配置した一覧画像として出力すること
+・後で1枚ずつ切り出せるよう、ポスターの間に十分な余白を空けること
+・各ポスターは縦長の3:4比率で、サイズ・縦横比を3枚とも揃えること
+・番号や文字は入れないこと
+・完成した一覧画像だけをそのまま出力すること</div>
+        <p class="text-[10px] text-gray-500 text-center mt-2">▼ スクロールで全文表示できます</p>
+      </div>
+    </div>
+
+    <!-- STEP3 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">03</span>
+        <p class="font-bold text-base sm:text-lg">日本人目線で違和感チェック</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        <span class="block">看板の日本語や街並み、着物の合わせ方など、違和感があれば修正をお願いします。</span>
+        <span class="block">日本に住む私たちだからこそ気づけるポイントです🇯🇵</span>
+      </p>
+    </div>
+
+    <!-- STEP4 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">04</span>
+        <p class="font-bold text-base sm:text-lg">商品タイトルを作ってもらう</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed mb-4">
+        <span class="block">英語が苦手でも心配いりません。</span>
+        <span class="block">検索されやすい英語タイトルを、意味の解説つきで作ってもらえます✍️</span>
+      </p>
+      <div class="bg-gray-900 text-gray-100 rounded-2xl p-5 relative">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs text-gray-400 font-bold">【コピペ用プロンプト】</p>
+          <button onclick="copyPrompt('prompt3')" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold pl-2.5 pr-3 py-1.5 rounded-lg transition flex items-center gap-1 shrink-0">📋 コピー</button>
+        </div>
+        <div id="prompt3" class="text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-mono max-h-48 overflow-y-auto pr-2"># やってほしいこと
+Etsyで海外向けに販売する商品の「英語タイトル」を考えてください。
+
+私は英語がほとんど読めないので、タイトルの意味・おすすめの理由・どれを選べばいいかを、英語がわからない人でもわかるように日本語で解説しながら進めてください。
+
+# 商品の内容
+【ここに販売する商品の内容を日本語で書く】
+
+# 想定している購入者
+【ここに買ってほしい人のイメージを書く】
+例：日本文化や日本旅行が好きな海外の20〜30代女性、日本テイストのインテリアを探している人
+
+# タイトルを考える条件
+・見ただけで「何の商品か」がわかるタイトルにすること
+・Etsyで実際に検索されそうな英単語を自然に盛り込むこと
+・場所・モチーフ・デザイン・商品ジャンルが伝わる内容にすること
+・英単語を不自然に並べただけのタイトルにしないこと
+・同じ単語を繰り返し使わないこと
+・難易度の高すぎる英単語は避けること
+・スペルミスがないか必ず確認すること
+・10案作り、それぞれ少しずつ角度を変えること
+
+# 出力してほしい形式
+各タイトル案ごとに、以下の順番でまとめてください。
+①そのままEtsyに使える英語タイトル
+②日本語で言うとどんな意味か（やさしい言葉で）
+③このタイトルをおすすめする理由（1〜2文）
+④タイトルに含まれる主要な英単語とその意味（3〜5個）
+
+# 最後にお願いしたいこと
+10案の中から「迷ったらこれを選べば間違いない」というタイトルを1つ選び、理由を日本語で説明してください。
+最後にもう一度、「Etsyにそのまま貼り付けるタイトル」として選んだ英語タイトルだけを表示してください。</div>
+        <p class="text-[10px] text-gray-500 text-center mt-2">▼ スクロールで全文表示できます</p>
+      </div>
+    </div>
+
+    <!-- STEP5 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">05</span>
+        <p class="font-bold text-base sm:text-lg">商品説明文を作ってもらう</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed mb-4">
+        <span class="block">海外のお客様に商品の魅力が伝わる説明文も、日本語の解説つきで作ってもらえます📝</span>
+      </p>
+      <div class="bg-gray-900 text-gray-100 rounded-2xl p-5 relative">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs text-gray-400 font-bold">【コピペ用プロンプト】</p>
+          <button onclick="copyPrompt('prompt4')" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold pl-2.5 pr-3 py-1.5 rounded-lg transition flex items-center gap-1 shrink-0">📋 コピー</button>
+        </div>
+        <div id="prompt4" class="text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-mono max-h-48 overflow-y-auto pr-2"># やってほしいこと
+Etsyで海外向けに販売する商品の「英語の商品説明文」を作成してください。
+
+私は英語がほとんど読めないので、どんな内容が書かれているか、どこをそのまま貼り付ければいいかが、英語がわからない人でもわかるように日本語で解説しながら進めてください。
+
+# 商品の内容
+【ここに販売する商品の内容を日本語で書く】
+
+# 商品の情報
+・商品タイプ：デジタル商品
+・ファイル形式：【例：JPG／PNG／PDFなど】
+・サイズ：【例：2:3、3:4、A4など】
+・受け取り方法：Etsyからデータをダウンロード
+・印刷物の発送：なし
+わからない項目は「不明」と書いてください。
+
+# 想定している購入者
+【ここに買ってほしい人のイメージを書く】
+例：日本文化や日本旅行が好きな海外の20〜30代女性、寝室やリビングに飾れるアートを探している人
+
+# 説明文を作る条件
+・読んだだけでどんな商品かすぐイメージできる文章にすること
+・やさしく自然な英語を使い、難解な言い回しは避けること
+・購入後に自分の部屋に飾った様子を想像しやすい文章にすること
+・入力していない商品情報を勝手に付け足さないこと
+・デジタル商品であり、実物は届かないことをはっきり書くこと
+
+# 説明文の組み立て方
+1. 導入文（2〜3文で、どんな商品か・どんな部屋に合うか）
+2. 商品の特徴（3〜5個、箇条書き）
+3. こんな人におすすめ（3〜5個）
+4. 商品情報（入力した内容のみをまとめる）
+5. 購入前の注意点（デジタル商品で実物は届かない旨を必ず入れる）
+
+# 出力してほしい形式
+①Etsyにそのまま貼り付けられる英語の商品説明文（完成版のみ）
+②日本語で言うとどんな内容か（やさしい言葉で）
+③説明文の中でよく出てくる英語表現の意味（5個程度）
+④このまま使って問題ないか（自然さや注意点を日本語で）</div>
+        <p class="text-[10px] text-gray-500 text-center mt-2">▼ スクロールで全文表示できます</p>
+      </div>
+    </div>
+
+    <!-- STEP6 -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="step-number text-4xl font-extrabold mr-3">06</span>
+        <p class="font-bold text-base sm:text-lg">Etsyに出品して完了🎉</p>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        <span class="block">できあがった画像とタイトル・説明文を、<a href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold underline">Etsy</a>というサイトに登録すれば出品完了。</span>
+        <span class="block">時間が余ったら、別のテーマでもう1パターン出品しておく…なんてこともできちゃいます😌</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 完成イメージギャラリー -->
+<section class="py-12 bg-bgLight">
+  <h3 class="text-center font-bold text-lg mb-6 px-6">こんな仕上がりに🖼️</h3>
+  <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-4 px-6 pb-2">
+    <img src="assets/poster_set1.png" alt="富士山×桜×新幹線、雨の京都、提灯の路地の日本風ポスター" class="w-72 h-auto rounded-2xl shadow-md snap-center shrink-0">
+    <img src="assets/poster_set2.png" alt="雪景色の合掌造り、海辺の電車、厳島神社の鳥居の日本風ポスター" class="w-72 h-auto rounded-2xl shadow-md snap-center shrink-0">
+    <img src="assets/poster_set3.png" alt="ラベンダー畑、荒波と花、たこ焼き屋台の日本風ポスター" class="w-72 h-auto rounded-2xl shadow-md snap-center shrink-0">
+    <img src="assets/poster_set4.png" alt="紅葉と鹿、武者絵、雪見温泉の猿の日本風ポスター" class="w-72 h-auto rounded-2xl shadow-md snap-center shrink-0">
+  </div>
+</section>
+
+<!-- 継続のコツ -->
+<section class="px-6 pb-14">
+  <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 max-w-lg mx-auto">
+    <p class="font-bold text-sm mb-2">🌻 続けるコツ</p>
+    <p class="text-sm text-gray-700 leading-relaxed">
+      <span class="block">完璧を目指さず、まずは1テーマ・1枚だけ作ってみるのがおすすめ。</span>
+      <span class="block">データ販売は在庫リスクがないので、気軽にいくつも試して「反応がいいもの」を後から増やしていけます。</span>
+    </p>
+  </div>
+</section>
+
+<!-- まとめ -->
+<section class="px-6 pb-16">
+  <h3 class="text-center font-bold text-lg mb-6">まとめ🌷</h3>
+  <div class="max-w-sm mx-auto space-y-2 mb-8">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 px-4 py-3 flex items-center">
+      <span class="step-number text-lg font-extrabold mr-3 w-6 text-center">1</span>
+      <span class="text-sm text-gray-700">テーマを考える</span>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 px-4 py-3 flex items-center">
+      <span class="step-number text-lg font-extrabold mr-3 w-6 text-center">2</span>
+      <span class="text-sm text-gray-700">画像を作る</span>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 px-4 py-3 flex items-center">
+      <span class="step-number text-lg font-extrabold mr-3 w-6 text-center">3</span>
+      <span class="text-sm text-gray-700">タイトル・説明文を作る</span>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 px-4 py-3 flex items-center">
+      <span class="step-number text-lg font-extrabold mr-3 w-6 text-center">4</span>
+      <span class="text-sm text-gray-700">出品する</span>
+    </div>
+  </div>
+  <p class="text-sm text-gray-600 leading-relaxed max-w-md mx-auto text-center">
+    たったこれだけの流れで、<strong class="text-gray-800">寝かしつけ後の30分</strong>が収入につながる時間に変わります🌷
+  </p>
+</section>
+
+<!-- ブロックC：完全固定パート -->
+<section class="py-16 px-6 bg-gray-800 text-white text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-8">
+        ⚠️ でも、正直にお伝えします。
+    </h2>
+
+    <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto text-left">
+        ここまで読んで、「日本風ポスター販売もやってみようかな」と思ったかもしれません。<br><br>
+        でも実は…<br>
+        <strong class="text-white text-lg border-b-2 border-primary pb-1">「やり方を知っていること」と<br>「実際に継続して収入にできること」</strong><br>は、全く別物なんです。
+    </p>
+
+    <ul class="text-left max-w-md mx-auto space-y-4 mb-8 bg-gray-700/50 p-6 rounded-2xl border border-gray-600">
+        <li class="flex items-start">
+            <span class="text-primary text-xl mr-3 shrink-0">🤔</span>
+            <span class="text-gray-200 text-sm">どんなテーマ・構図が海外の人に刺さるのかわからない…</span>
+        </li>
+        <li class="flex items-start">
+            <span class="text-primary text-xl mr-3 shrink-0">🤔</span>
+            <span class="text-gray-200 text-sm">プロンプトを打っても思うような画像が出てこない…</span>
+        </li>
+        <li class="flex items-start">
+            <span class="text-primary text-xl mr-3 shrink-0">🤔</span>
+            <span class="text-gray-200 text-sm">出品しても、どう改善すればいいのかわからず止まってしまう…</span>
+        </li>
+    </ul>
+
+    <p class="text-gray-300 mb-12">
+        ここでつまずいて、諦めてしまう方がいちばん多いんです🥺
+    </p>
+
+    <div class="bg-white text-gray-800 rounded-3xl p-6 sm:p-8 text-left relative mt-16 max-w-lg mx-auto shadow-2xl">
+        <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-6 py-2 rounded-full font-bold border-4 border-white whitespace-nowrap shadow-md">
+            💔 実は私も、大失敗だらけでした
+        </div>
+        <p class="text-sm sm:text-base leading-relaxed mt-4 mb-4">
+            私自身、過去に自己流で副業に手を出し、<br>
+            <strong class="text-red-500 text-lg highlight-marker">150万円ものお金を失う</strong><br>
+            という痛い経験をしています。
+        </p>
+        <p class="text-sm text-gray-600 mb-6 bg-gray-50 p-3 rounded-lg">
+            「私には才能がないんだ…」とお布団の中で一人泣いた夜は数え切れません。
+        </p>
+        <p class="text-sm sm:text-base leading-relaxed">
+            そこから必死に試行錯誤し、ようやく見つけたのが<strong class="text-gray-800">「AIを賢く活用し、手堅くお家で収入を作るための『実践ノウハウと神テンプレート』」</strong>でした。<br><br>
+            私と今のあなたの違いは、才能ではありません。<br>
+            <strong class="text-primary font-bold">「成果が出る『型』を知っていて、<br>失敗を避ける方法を知っているかどうか」</strong><br>だけなんです。
+        </p>
+    </div>
+</section>
+
+<!-- 特別なプレゼント セクション -->
+<section class="py-16 px-6 bg-gradient-to-b from-[#fffcf7] to-[#ffe5d9]">
+    <div class="text-center mb-8">
+        <span class="inline-block bg-white text-primary border border-primary/30 font-bold px-6 py-3 rounded-3xl text-sm mb-4 shadow-sm animate-bounce-slow leading-snug">
+            遠回りしたくないあなたへ。<br>特別なプレゼント
+        </span>
+    </div>
+
+    <p class="text-center text-gray-800 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto font-bold bg-yellow-100/50 p-4 rounded-2xl border border-yellow-200">
+        私がこれまでに体験した、<br>150万円の損失からようやく掴み取った<br>
+        <span class="text-primary text-xl block mt-2">「寝かしつけ後の30分が<br>"収入を生む時間"に変わる<br>【実践マニュアル】」</span><br>
+        をこの一冊に詰め込みました。
+    </p>
+
+    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100 max-w-lg mx-auto relative mb-12">
+        <div class="absolute -top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+            無料プレゼント中🎁
+        </div>
+
+        <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">
+            『AIマネタイズの教科書』
+        </h3>
+
+        <div class="mb-6 flex justify-center">
+            <img alt="AIマネタイズの教科書" src="assets/book_cover.jpg" class="rounded-lg shadow-md max-w-full h-auto object-contain" style="max-height: 250px;">
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100">
+            <p class="font-bold text-center text-gray-800 mb-4 text-sm border-b border-gray-200 pb-2">
+                📖 教科書の中身を少しだけご紹介！
+            </p>
+            <ul class="space-y-3 text-sm text-gray-700">
+                <li class="flex items-start"><span class="mr-2 text-lg shrink-0">💎</span><span class="pt-0.5"><strong>第一章:</strong> いま一番始めやすいAIマネタイズ手法</span></li>
+                <li class="flex items-start"><span class="mr-2 text-lg shrink-0">💎</span><span class="pt-0.5"><strong>第二章:</strong> ChatGPT収益化プロンプト</span></li>
+                <li class="flex items-start"><span class="mr-2 text-lg shrink-0">💎</span><span class="pt-0.5"><strong>第三章:</strong> AIマネタイズ神テンプレート</span></li>
+                <li class="flex items-start"><span class="mr-2 text-lg shrink-0">💎</span><span class="pt-0.5"><strong>第四章:</strong> マネタイズのための生成AIツール3選</span></li>
+                <li class="flex items-start"><span class="mr-2 text-lg shrink-0">💎</span><span class="pt-0.5"><strong>第五章:</strong> AI×SNSで収益を生むリアル事例</span></li>
+            </ul>
+        </div>
+
+        <p class="text-sm text-gray-700 mt-6 leading-relaxed bg-white/80">
+            本書では、<br><strong>「作業効率を劇的に上げる神テンプレート（第三章）」</strong>や、<br>単発の仕事で終わらせないための<br><strong>「AI×SNSで毎月安定した収益を生むリアル事例（第五章）」</strong>など、<br>自己流では必ずつまずいてしまうポイントを網羅しています。
+        </p>
+    </div>
+
+    <div class="max-w-lg mx-auto text-center">
+        <p class="text-sm text-gray-700 mb-6 leading-relaxed">
+            AIのトレンドは日々進化しています。<br>
+            今のこの「初心者でも入りやすいボーナスタイム」が<br>
+            いつまで続くかは分かりません。<br>
+            だからこそ、<br>
+            今すぐこのノウハウを受け取って、確実な一歩を踏み出してほしいんです。<br><br>
+            <strong class="text-primary text-base bg-white/80 px-2 py-1 rounded inline-block shadow-sm">まとまった時間がなくても大丈夫。<br>まずは子どもが寝た後の1時間、一緒に始めてみませんか？🌷</strong>
+        </p>
+
+        <a href="https://utage-system.com/line/open/a5dtcba9Txtf?mtid=bRsS5WYpeJZt" rel="noopener noreferrer" target="_blank" class="block w-full bg-[#06C755] hover:bg-[#05b34c] text-white text-center font-bold py-4 px-6 rounded-2xl shadow-xl transition-transform hover:scale-[1.02] active:scale-[0.98] mb-4 flex flex-col items-center justify-center relative overflow-hidden group animate-bounce-slow">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+            <span class="text-xs mb-1 font-medium bg-white/20 px-3 py-0.5 rounded-full inline-block">＼ タップして ／</span>
+            <div class="flex items-center text-lg sm:text-xl relative z-10 mt-1">
+                <svg class="w-6 h-6 mr-2 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M23.929 10.318C23.929 4.622 18.571 0 11.96 0 5.351 0 0 4.622 0 10.318c0 5.093 4.148 9.387 9.873 10.155.39.083.91.24 1.047.55.123.277.08.625.04.86-.06.337-.384 2.29-.444 2.65-.098.583.473.81.93.593 1.134-.54 6.104-3.594 8.784-6.494 2.45-2.656 3.7-5.467 3.7-8.314z"/></svg>
+                公式LINEで無料で受け取る
+            </div>
+        </a>
+
+        <p class="text-[10px] sm:text-xs text-gray-500 text-left bg-white/50 p-3 rounded-lg">
+            ※現在のAI事情に合わせた最新ノウハウのため、期間限定の無料配布となります。予告なく配布を終了する場合がありますので、お早めにお受け取りください。
+        </p>
+    </div>
+</section>
+
+<!-- フッター（完全固定） -->
+<footer class="bg-white py-8 border-t border-gray-100 text-center">
+    <a href="https://www.instagram.com/mina_ai_fukugyo/" rel="noopener noreferrer" target="_blank" class="inline-flex items-center justify-center text-gray-600 hover:text-primary transition-colors mb-4">
+        <svg class="w-5 h-5 mr-2 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        <span class="text-sm font-medium">Instagram: @mina_ai_fukugyo</span>
+    </a>
+    <p class="text-xs text-gray-500 mb-1">みな ｜ AI×SNSで在宅収入を叶える主婦</p>
+    <p class="text-xs text-gray-400">&copy; 2026 @mina_ai_fukugyo. All Rights Reserved.</p>
+</footer>
+
+</div>
+
+<script>
+function copyPrompt(elementId) {
+    const textToCopy = document.getElementById(elementId).innerText;
+    const toast = document.getElementById('copyToast');
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        toast.style.display = 'flex';
+        toast.style.animation = 'none';
+        toast.offsetHeight;
+        toast.style.animation = null;
+        setTimeout(() => { toast.style.display = 'none'; }, 2000);
+    }).catch(err => {
+        console.error('コピーに失敗しました', err);
+        fallbackCopyTextToClipboard(textToCopy, toast);
+    });
+}
+function fallbackCopyTextToClipboard(text, toast) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.top = "0"; textArea.style.left = "0"; textArea.style.position = "fixed";
+    document.body.appendChild(textArea);
+    textArea.focus(); textArea.select();
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            toast.style.display = 'flex';
+            setTimeout(() => { toast.style.display = 'none'; }, 2000);
+        }
+    } catch (err) { console.error('Fallback: Oops, unable to copy', err); }
+    document.body.removeChild(textArea);
+}
+</script>
+
+</body>
+</html>
